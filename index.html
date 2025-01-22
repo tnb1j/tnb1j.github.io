@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jalacia's Clients</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="f.png" type="image/png">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Pacifico&display=swap');
+
+        body {
+            font-family: 'Quicksand', sans-serif, 'Pacifico', cursive;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe4e1;
+            color: #000;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Scrollbar styling */
+        body::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        body::-webkit-scrollbar-track {
+            background-color: #ffe4e1;
+            border-radius: 10px;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background-color: #d6306e;
+            border-radius: 10px;
+        }
+
+        body::-webkit-scrollbar-thumb:hover {
+            background-color: #e74c3c;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            text-align: center;
+            color: #d6306e;
+            margin-bottom: 20px;
+            font-family: 'Pacifico', cursive;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            color: #333;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        /* Photo layout */
+        .photo-item, .video-item {
+            border-radius: 12px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* For images */
+        .photo-item img, .video-item video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Layout behavior */
+        .photo-item {
+            width: calc(33.33% - 10px);
+        }
+
+        .video-item {
+            width: calc(45% - 10px);
+        }
+
+        @media (max-width: 768px) {
+            .photo-item, .video-item {
+                width: calc(50% - 10px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .photo-item, .video-item {
+                width: 100%;
+            }
+        }
+
+        .contact-container {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .social-icons {
+            margin: 20px 0;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            font-size: 2rem;
+            margin: 0 15px;
+            color: #d6306e;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #e74c3c;
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Work</h1>
+
+        <!-- Photos Section -->
+        <h2>Client Photos</h2>
+        <div class="gallery">
+            <div class="photo-item">
+                <img src="i1.png" alt="Client Photo 1">
+            </div>
+            <div class="photo-item">
+                <img src="i2.png" alt="Client Photo 2">
+            </div>
+            <div class="photo-item">
+                <img src="i3.png" alt="Client Photo 3">
+            </div>
+            <div class="photo-item">
+                <img src="i4.png" alt="Client Photo 4">
+            </div>
+            <div class="photo-item">
+                <img src="i5.png" alt="Client Photo 5">
+            </div>
+            <div class="photo-item">
+                <img src="i6.png" alt="Client Photo 6">
+            </div>
+            <div class="photo-item">
+                <img src="i7.png" alt="Client Photo 7">
+            </div>
+            <div class="photo-item">
+                <img src="i8.png" alt="Client Photo 8">
+            </div>
+            <div class="photo-item">
+                <img src="i9.png" alt="Client Photo 9">
+            </div>
+            <div class="photo-item">
+                <img src="i10.png" alt="Client Photo 10">
+            </div>
+        </div>
+
+        <!-- Videos Section -->
+        <h2>Client Videos</h2>
+        <div class="gallery">
+            <div class="video-item">
+                <video controls>
+                    <source src="v1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-item">
+                <video controls>
+                    <source src="v2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-item">
+                <video controls>
+                    <source src="v3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-item">
+                <video controls>
+                    <source src="v4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-item">
+                <video controls>
+                    <source src="v5.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-item">
+                <video controls>
+                    <source src="v6.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-item">
+                <video controls>
+                    <source src="v7.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-item">
+                <video controls>
+                    <source src="v8.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-item">
+                <video controls>
+                    <source src="v9.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-item">
+                <video controls>
+                    <source src="v10.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/jalacia.desir3e/" target="_blank">
+                    <img src="https://static.cdninstagram.com/rsrc.php/v4/yI/r/VsNE-OHk_8a.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/jalacia.frank.5" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" alt="Facebook">
+                </a>
+                <a href="mailto:lacylover12@gmail.com">
+                    <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="Email">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
